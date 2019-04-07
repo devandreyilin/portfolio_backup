@@ -1,0 +1,150 @@
+@import "utils/vars";
+
+
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
+@include media-breakpoint-down(lg) {
+
+   // Callback
+   .callback .success {
+      font-size: 1.2em;
+      &__message {
+         width: 60%;
+      }
+   }
+
+}
+
+// ≥992px
+@include media-breakpoint-down(md) {
+
+   // Sections
+   .s {
+      &-services, &-portfolio, &-callback {
+         padding: 12% 0 10%;
+      }
+   }
+
+   // Callback
+   .callback .success__message {
+      width: 75%;
+   }
+
+}
+
+// ≥768px
+@include media-breakpoint-down(sm) {
+
+   body {
+      font-size: 1.1em;
+   }
+
+   .hide-tablet {
+      display: none;
+   }
+
+   .show-tablet {
+      display: block;
+   }
+
+
+   // HEADER
+   .header {
+
+      &-composition {
+         .h1-title {
+            font-size: 1.8em;
+         }
+      }
+   }
+
+   .navigation__list {
+      flex-direction: column;
+      width: 100%;
+      text-align: left;
+      align-items: flex-start;
+
+      li, a {
+         width: 100%;
+      }
+   }
+
+   // NAVIGATION
+   .logo-wrap {
+      max-height: 57px;
+   }
+
+   .logo {
+      svg {
+         max-height: 57px;
+      }
+   }
+
+   // Callback
+   .callback .success {
+      font-size: 1em;
+   }
+
+}
+
+// ≥576px
+@include media-breakpoint-down(xs) {
+
+   .hide-mobile {
+      display: none;
+   }
+
+   .show-mobile {
+      display: block;
+   }
+
+   .s-title {
+      font-size: 1.6em;
+   }
+
+   .subhead {
+      font-size: 1em;
+   }
+
+
+   // HEADER
+   .header {
+      background-attachment: scroll;
+
+      &-composition {
+
+         .h1-title {
+            font-size: 1.8em;
+            line-height: 1.3;
+         }
+
+         padding: 0 1em;
+         font-size: 1em;
+      }
+   }
+
+}
+
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
+@include media-breakpoint-up(sm) {
+
+}
+
+// ≤768px
+@include media-breakpoint-up(md) {
+
+}
+
+// ≤992px
+@include media-breakpoint-up(lg) {
+
+}
+
+// ≤1200px
+@include media-breakpoint-up(xl) {
+
+}

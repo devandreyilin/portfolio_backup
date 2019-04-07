@@ -1,0 +1,10 @@
+@import "../_mixins/font-face";
+
+// Raleway font
+@include font-face("raleway", "../fonts/Raleway/RalewayRegular/RalewayRegular");
+@include font-face("raleway", "../fonts/Raleway/RalewayExtraBold/RalewayExtraBold", 800);
+@include font-face("raleway", "../fonts/Raleway/RalewayBold/RalewayBold", 700);
+
+// Roboto font
+@include font-face("roboto", "../fonts/Roboto/RobotoLight/RobotoLight", 300);
+

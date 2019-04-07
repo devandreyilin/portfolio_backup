@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+   <meta charset="utf-8">
+   <!-- <base href="/"> -->
+
+   <title>Ailin Dev - Разработка Веб-сайтов</title>
+   <meta name="description" content="">
+
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+   <!-- Template Basic Images Start -->
+   <meta property="og:image" content="path/to/image.jpg">
+
+   <!--[if lt IE 9]>
+   <script src="http://cdnjs.cloudflare.com/ajax/libs/es5-shim/2.0.8/es5-shim.min.js"></script><![endif]-->
+
+   <link rel="icon" href="img/favicon/icon.ico">
+   <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+   <!-- Template Basic Images End -->
+
+   <!-- Custom Browsers Color Start -->
+   <meta name="theme-color" content="#000">
+   <!-- Custom Browsers Color End -->
+
+   <link rel="stylesheet" href="css/main.min.css">
+
+</head>
+
+<body>
+<div class="wrapper">
+
+   <button class="top" title="Наверх"><img class="svg-img" src="img/icons/arrow.svg" alt=""></button>
+
+   <!-- HEADER -->
+   <header id="header" class="header"
+           style="background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url('img/bg/header-3.jpg');">
+      <div class="flex-center">
+
+         <div class="header-composition">
+            <p>Привет, мое имя Андрей Ильин и я</p>
+            <h1 class="h1-title">FULL STACK
+               <br class="show-mobile hide-desktop hide-tablet">
+               Веб-разработчик</h1>
+            <p>Создание современных и адаптивных веб-сайтов</p>
+         </div>
+         <!-- /.header-composition -->
+         <a class="header__scroll-down" href="#services">
+            <img class="header__arrow-down" src="img/icons/arrow.svg" alt="Scroll Down">
+         </a>
+      </div>
+   </header>
+   <!-- /HEADER -->
+
+   <!-- NAVIGATION-->
+   <nav class="main-nav">
+      <div class="container">
+         <div class="row">
+            <div class="col-12 navigation">
+               <div class="logo-wrap">
+                  <a class="logo" href="/">
+                     <img class="svg-img" src="img/icons/logo.svg">
+                  </a>
+               </div>
+               <button class="hamburger hamburger--collapse hide-desktop show-tablet" type="button">
+					  <span class="hamburger-box">
+						 <span class="hamburger-inner"></span>
+					  </span>
+               </button>
+               <ul id="top-menu" class="navigation__list hide-tablet hide-mobile show-desktop">
+                  <li class="active"><a href="#header">Главная</a></li>
+                  <li><a href="#services">Услуги</a></li>
+                  <li><a href="#portfolio">Портфолио</a></li>
+                  <li><a href="#callback">Контакты</a></li>
+               </ul>
+            </div>
+         </div>
+      </div>
+   </nav>
+   <!-- /NAVIGATION-->
+
+   <!-- PAGE-CONTENT -->
+   <div class="page-content">
+
+      <!-- Services -->
+      <section id="services" class="s-services" style="background-color: #f5f5f5;">
+         <div class="container">
+            <div class="row">
+               <div class="col-12">
+                  <div class="section__composition">
+                     <h2 class="s-title">Мои услуги</h2>
+                     <p class="subhead">Проектирование <span>лендинга</span>, <span>сайта-визитки</span> и <span>интернет-магазина</span>
+                        с последующей посадкой на CMS WordPress</p>
+                  </div>
+               </div>
+            </div>
+            <div class="row skills">
+               <div class="col-lg-4 col-md-6">
+                  <div class="s-services__box">
+                     <img class="svg-img" src="img/icons/puzzle.svg">
+                     <h4 class="h4-title">Верстка</h4>
+                     <ul class="skills-list">
+                        <li>HTML5 / CSS3</li>
+                        <li>SASS (SCSS)</li>
+                        <li>Bootstrap 4</li>
+                        <li>Adaptive / Responsive</li>
+                        <li>Cross browser</li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-md-6">
+                  <div class="s-services__box">
+                     <img class="svg-img" src="img/icons/gear.svg">
+                     <h4 class="h4-title">Программирование</h4>
+                     <ul class="skills-list">
+                        <li>PHP</li>
+                        <li>WordPress</li>
+                        <li>JavaScript(jQuery)</li>
+                        <li>Gulp.js</li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-md-6">
+                  <div class="s-services__box">
+                     <img class="svg-img" src="img/icons/additionally.svg">
+                     <h4 class="h4-title">Дополнительно</h4>
+                     <ul class="skills-list">
+                        <li>Adobe Photoshop</li>
+                        <li>Adobe Illustrator</li>
+                        <li>Inkscape</li>
+                        <li>Figma</li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- /Services -->
+
+      <!-- Portfolio-->
+      <section id="portfolio" class="s-portfolio">
+         <div class="container">
+            <div class="row">
+               <div class="col-12">
+                  <div class="section__composition">
+                     <h2 class="s-title">Примеры работ</h2>
+                     <p class="subhead">Ниже представлены примеры моих работ. Кликнув по ним, вы сможете разглядеть их подробнее</p>
+                  </div>
+               </div>
+            </div>
+            <div class="row preview-boxs">
+               <div class="col-lg-4 col-md-6">
+                  <figure class="preview-box">
+                     <img src="img/preview/item-1.jpg" alt="preview portfolio">
+                     <figcaption>
+                        <h2 class="h2-title">Бизнес <span>Сайт</span></h2>
+                        <p>Кликните для перехода</p>
+                     </figcaption>
+                  </figure>
+               </div>
+               <div class="col-lg-4 col-md-6">
+                  <figure class="preview-box">
+                     <img src="img/preview/item-2.jpg" alt="preview portfolio">
+                     <figcaption>
+                        <h2 class="h2-title">Бизнес <span>Сайт</span></h2>
+                        <p>Кликните для перехода</p>
+                     </figcaption>
+                  </figure>
+               </div>
+               <div class="col-lg-4 col-md-6">
+                  <figure class="preview-box">
+                     <img src="img/preview/item-3.jpg" alt="preview portfolio">
+                     <figcaption>
+                        <h2 class="h2-title">Бизнес <span>Сайт</span></h2>
+                        <p>Кликните для перехода</p>
+                     </figcaption>
+                  </figure>
+               </div>
+               <div class="col-lg-4 col-md-6">
+                  <figure class="preview-box">
+                     <img src="img/preview/item-4.jpg" alt="preview portfolio">
+                     <figcaption>
+                        <h2 class="h2-title">Бизнес <span>Сайт</span></h2>
+                        <p>Кликните для перехода</p>
+                     </figcaption>
+                  </figure>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-12">
+                  <div class="section__composition">
+                     <p class="subhead"><span>*сделанные с превеликим удовольствием</span> и общепринятым стандартом W3C</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- /Portfolio-->
+
+      <!-- Callback -->
+      <section id="callback" class="s-callback" style="background-color: #f5f5f5;">
+         <div class="container">
+            <div class="row">
+               <div class="col-12">
+                  <div class="section__composition">
+                     <h2 class="s-title">Свяжитесь со мной</h2>
+                     <p class="subhead">Если у вас возникло желание к сотрудничеству, заполните форму ниже, пожалуйста.
+                        Либо Вы можете связаться со мной напрямую через почту:
+                        <a class="mail"
+                           href="mailto:ailin.webdeveloper@gmail.com"><span>ailin.webdeveloper@gmail.com</span></a></p>
+                  </div>
+               </div>
+               <div class="col-lg-6 offset-lg-3">
+                  <form class="callback">
+                     <div class="success"><span class="success__message">Спасибо!<br>Ваше сообщение было успешно отправлено<span class="success__close">&times;</span></span></div>
+
+                     <input class="callback__field" type="text" name="name" placeholder="Ваше имя..."
+                            required autocomplete="nope">
+                     <input class="callback__field" type="email" name="email"
+                            placeholder="Ваша почта..."
+                            required autocomplete="nope">
+
+                     <select class="select" name="services">
+                        <option value disabled selected>Тема письма...</option>
+                        <option>Сотрудничество</option>
+                        <option>Вопрос</option>
+                        <option>Сказать &laquo;привет&raquo;</option>
+                        <option>Другое</option>
+                     </select>
+
+                     <textarea class="callback__field" name="message" rows="5" placeholder="Текст сообщения..."></textarea>
+
+                     <input type="submit" class="btn btn-submit" value="Отправить">
+
+
+                  </form>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- /Callback -->
+
+   </div>
+   <!-- /PAGE-CONTENT -->
+
+   <!-- FOOTER -->
+   <footer class="footer" style="background-color: #222;">
+
+      <div class="container">
+         <div class="row">
+            <div class="col-12">
+               <ul class="footer__icon-list">
+                  <li>
+                     <a href="https://vk.com/ailindev" target="_blank">
+                        <img class="svg-img" title="Вконтакте" src="img/icons/vk.svg">
+                     </a>
+                  </li>
+                  <li>
+                     <a href="https://www.instagram.com/ailindev/">
+                        <img class="svg-img" title="Instagram" src="img/icons/instagram.svg">
+                     </a>
+                  </li>
+               </ul>
+               <div class="copyright">
+                  <p>&copy; 2019 Ailin Dev</p>
+               </div>
+            </div>
+         </div>
+      </div>
+
+   </footer>
+   <!-- /FOOTER -->
+
+</div>
+<!-- /WRAPPER -->
+
+
+<script src="js/scripts.min.js"></script>
+
+</body>
+</html>
