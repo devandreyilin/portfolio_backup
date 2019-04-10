@@ -1,0 +1,145 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
++media-breakpoint-down(lg)
+  .hidden-lg
+    display: none
+
+  .welcome
+    .h1
+      font-size: 63px
+  .header-contacts
+    font-size: 14px
+
+  .carousel-services
+    .owl-item:nth-child(2n+2)
+      .carousel-services-item
+        flex-direction: column
+  .footer-address
+    .footer-phone
+      font-size: 23px
+  .footer-social
+    .social
+      li
+        margin: 0
+  .logo-footer
+    + p
+      white-space: normal
+
+// ≥992px
++media-breakpoint-down(md)
+  .hidden-md
+    display: none
+
+  .welcome
+    .h1
+      font-size: 47px
+  .s
+    &-call
+      background-size: cover
+    &-partners.section-overlay
+      padding: 5% 0 10%
+  .footer-address
+    .footer-phone
+      font-size: 21px
+      padding-top: 0
+      i
+        top: 6px
+  .quotes
+    display: none
+  .s-partners.section-overlay
+    .owl-next
+      right: -30px
+    .owl-prev
+      left: -30px
+
+
+// ≥768px
++media-breakpoint-down(sm)
+  .hidden-sm
+    display: none
+  .welcome
+    .h1
+       font-size: 50px
+  .header-contacts
+    text-align: left
+  .s
+    &-call
+      &::before
+        width: 100vw
+      .callback
+        padding: 12% 0
+    &-partners.section-overlay
+      .owl-next
+        right: -30px
+        i
+        padding: 10px
+      .owl-prev
+        left: -30px
+        i
+        padding: 10px
+    &-partners.section-overlay
+      padding: 5% 0 10%
+
+
+
+  .footer-address
+    margin-bottom: 10px
+
+
+
+
+// ≥576px
++media-breakpoint-down(xs)
+  .hidden-xs
+    display: none
+
+  .welcome
+    .h1
+      font-size: 28px
+    p
+      span
+        font-size: 10px
+    .strong
+      margin-top: 15px
+      font-size: 15px
+  .header-composition
+    p
+      margin-top: 18px
+      font-size: 14px
+  .button
+    padding: 13px 38px
+  .s
+    &-call
+      .callback
+        padding: 12% 0
+        text-align: center
+    &-partners.section-overlay
+      .owl-next
+        right: -10px
+        i
+        padding: 10px
+      .owl-prev
+        left: -10px
+        i
+        padding: 10px
+  .selectize-control
+    text-align: left
+
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
++media-breakpoint-up(sm)
+
+// ≤768px
++media-breakpoint-up(md)
+
+// ≤992px
++media-breakpoint-up(lg)
+
+// ≤1200px
++media-breakpoint-up(xl)

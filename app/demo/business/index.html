@@ -1,0 +1,428 @@
+<!doctype html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport"
+         content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Business</title>
+   <!----------Styles---------->
+   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+   <!----------Scripts---------->
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+   <script src="js/jquery.numeric.min.js"></script>
+   <script src="js/smooth-scroll.polyfills.min.js"></script>
+   <script src="js/script.js"></script>
+</head>
+<body id="body">
+<div class="wrapper">
+   <div class="preloader"><div class="pulse"></div></div>
+   <!----------NavigationBar---------->
+   <section id="nav-bar">
+      <nav class="navbar navbar-expand-lg navbar-light">
+         <a class="navbar-brand" href="#"><img src="img/logo.png"></a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+               <li class="nav-item active">
+                  <a class="nav-link" href="#body">HOME</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#about">ABOUT US</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#services">SERVICES</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#team">OUR TEAM</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#price">PRICE PLANS</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#testimonials">TESTIMONIALS</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#contact">CONTACT</a>
+               </li>
+            </ul>
+         </div>
+      </nav>
+   </section>
+   <!----------Slider---------->
+   <div id="slider">
+      <div id="headerSlider" class="carousel slide" data-ride="carousel">
+         <ol class="carousel-indicators">
+            <li data-target="#headerSlider" data-slide-to="0" class="active"></li>
+            <li data-target="#headerSlider" data-slide-to="1"></li>
+            <li data-target="#headerSlider" data-slide-to="2"></li>
+         </ol>
+         <div class="carousel-inner">
+            <div class="carousel-item active" style="background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(img/banner-1.png);">
+               <div class="carousel-caption">
+                  <h5>How To Make A Website</h5>
+               </div>
+            </div>
+            <div class="carousel-item" style="background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(img/banner-2.png);">
+               <div class="carousel-caption">
+                  <h5>Create Responsive Website</h5>
+               </div>
+            </div>
+            <div class="carousel-item" style="background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(img/banner-3.png);">
+               <div class="carousel-caption">
+                  <h5>Business Website Design</h5>
+               </div>
+            </div>
+         </div>
+         <a class="carousel-control-prev" href="#headerSlider" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+         </a>
+         <a class="carousel-control-next" href="#headerSlider" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+         </a>
+      </div>
+   </div>
+   <!----------About---------->
+   <section id="about">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-6">
+               <h2>About Us</h2>
+               <div class="about-content">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aspernatur assumenda at commodi
+                  consequatur dolore dolores dolorum eaque est facilis, id incidunt iste necessitatibus nihil officia,
+                  quas
+                  veniam veritatis voluptatibus. Doloribus facilis fugit illo nihil omnis perferendis quae quaerat,
+                  voluptas!
+               </div>
+               <button type="button" class="btn btn-primary">Read more>></button>
+            </div>
+
+            <div class="col-md-6 skills-bar">
+               <p>Adobe Photoshop</p>
+               <div class="progress">
+                  <div class="progress-bar" style="width: 80%">80%</div>
+               </div>
+               <p>UI Design</p>
+               <div class="progress">
+                  <div class="progress-bar" style="width: 85%">85%</div>
+               </div>
+               <p>WordPress</p>
+               <div class="progress">
+                  <div class="progress-bar" style="width: 75%">75%</div>
+               </div>
+               <p>Graphics Design</p>
+               <div class="progress">
+                  <div class="progress-bar" style="width: 50%">50%</div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!----------Services---------->
+   <section id="services">
+      <div class="container">
+         <h1>Our Services</h1>
+         <div class="row services">
+            <div class="col-lg-3 col-md-6 text-center">
+               <div class="icon">
+                  <i class="fas fa-desktop"></i>
+               </div>
+               <h3>Web Development</h3>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias assumenda cum doloribus et
+                  exercitationem?</p>
+            </div>
+            <div class="col-lg-3 col-md-6 text-center">
+               <div class="icon">
+                  <i class="fas fa-tablet"></i>
+               </div>
+               <h3>Web Development</h3>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias assumenda cum doloribus et
+                  exercitationem?</p>
+            </div>
+            <div class="col-lg-3 col-md-6 text-center">
+               <div class="icon">
+                  <i class="fas fa-chart-line"></i>
+               </div>
+               <h3>Digital Marketing</h3>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias assumenda cum doloribus et
+                  exercitationem?</p>
+            </div>
+            <div class="col-lg-3 col-md-6 text-center">
+               <div class="icon">
+                  <i class="fas fa-brush"></i>
+               </div>
+               <h3>Graphics Designing</h3>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias assumenda cum doloribus et
+                  exercitationem?</p>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!----------Team Members---------->
+   <section id="team">
+      <div class="container">
+         <h1>Our Team</h1>
+         <div class="row">
+            <div class="col-lg-3 col-md-6 profile-pic text-center">
+               <div class="img-box img-responsive">
+                  <img src="img/team-1.jpg">
+                  <ul>
+                     <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                     <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                     <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+                  </ul>
+               </div>
+               <h2>Akshay Kumar</h2>
+               <h3>Founder / CEO</h3>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, soluta.</p>
+            </div>
+            <div class="col-lg-3 col-md-6 profile-pic text-center">
+               <div class="img-box img-responsive">
+                  <img src="img/team-1.jpg">
+                  <ul>
+                     <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                     <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                     <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+                  </ul>
+               </div>
+               <h2>Akshay Kumar</h2>
+               <h3>Founder / CEO</h3>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, soluta.</p>
+            </div>
+            <div class="col-lg-3 col-md-6 profile-pic text-center">
+               <div class="img-box img-responsive">
+                  <img src="img/team-1.jpg">
+                  <ul>
+                     <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                     <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                     <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+                  </ul>
+               </div>
+               <h2>Akshay Kumar</h2>
+               <h3>Founder / CEO</h3>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, soluta.</p>
+            </div>
+            <div class="col-lg-3 col-md-6 profile-pic text-center">
+               <div class="img-box img-responsive">
+                  <img src="img/team-1.jpg">
+                  <ul>
+                     <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                     <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                     <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+                  </ul>
+               </div>
+               <h2>Akshay Kumar</h2>
+               <h3>Founder / CEO</h3>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, soluta.</p>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!----------Promo---------->
+   <section id="promo">
+      <div class="container">
+         <p>Get Free Domain Name and Web Hosting</p>
+         <a href="#contact" class="btn btn-primary">Contact Us</a>
+      </div>
+   </section>
+   <!----------Price Plans---------->
+   <section id="price">
+      <div class="container">
+         <h1>Price Plan</h1>
+         <div class="row">
+            <div class="col-lg-3 col-md-6">
+               <div class="single-price">
+                  <div class="price-head">
+                     <h2>Free</h2>
+                     <p>$0/<span>month</span></p>
+                  </div>
+                  <div class="price-content">
+                     <ul>
+                        <li><i class="fas fa-check-circle"></i>5GB Space</li>
+                        <li><i class="fas fa-check-circle"></i>10GB Bandwidth</li>
+                        <li><i class="fas fa-times-circle"></i>Email Account</li>
+                        <li><i class="fas fa-times-circle"></i>5GB Space</li>
+                        <li><i class="fas fa-times-circle"></i>5GB Space</li>
+                     </ul>
+                  </div>
+                  <div class="price-button">
+                     <a href="">Join Free</a>
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+               <div class="single-price">
+                  <div class="price-head">
+                     <h2>Start Up</h2>
+                     <p>$10/<span>month</span></p>
+                  </div>
+                  <div class="price-content">
+                     <ul>
+                        <li><i class="fas fa-check-circle"></i>5GB Space</li>
+                        <li><i class="fas fa-check-circle"></i>10GB Bandwidth</li>
+                        <li><i class="fas fa-times-circle"></i>Email Account</li>
+                        <li><i class="fas fa-times-circle"></i>5GB Space</li>
+                        <li><i class="fas fa-times-circle"></i>5GB Space</li>
+                     </ul>
+                  </div>
+                  <div class="price-button">
+                     <a href="">Buy Now</a>
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+               <div class="single-price">
+                  <div class="price-head">
+                     <h2>Start Up</h2>
+                     <p>$0/<span>month</span></p>
+                  </div>
+                  <div class="price-content">
+                     <ul>
+                        <li><i class="fas fa-check-circle"></i>5GB Space</li>
+                        <li><i class="fas fa-check-circle"></i>10GB Bandwidth</li>
+                        <li><i class="fas fa-times-circle"></i>Email Account</li>
+                        <li><i class="fas fa-times-circle"></i>5GB Space</li>
+                        <li><i class="fas fa-times-circle"></i>5GB Space</li>
+                     </ul>
+                  </div>
+                  <div class="price-button">
+                     <a href="">Buy Now</a>
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+               <div class="single-price">
+                  <div class="price-head">
+                     <h2>Start Up</h2>
+                     <p>$0/<span>month</span></p>
+                  </div>
+                  <div class="price-content">
+                     <ul>
+                        <li><i class="fas fa-check-circle"></i>5GB Space</li>
+                        <li><i class="fas fa-check-circle"></i>10GB Bandwidth</li>
+                        <li><i class="fas fa-times-circle"></i>Email Account</li>
+                        <li><i class="fas fa-times-circle"></i>5GB Space</li>
+                        <li><i class="fas fa-times-circle"></i>5GB Space</li>
+                     </ul>
+                  </div>
+                  <div class="price-button">
+                     <a href="">Buy Now</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!----------Testimonials---------->
+   <section id="testimonials">
+      <div class="container">
+         <h1>Testimonials</h1>
+         <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+         <div class="row">
+            <div class="col-lg-3 col-md-6 text-center">
+               <div class="profile">
+                  <img class="user" src="img/team-1.jpg" alt="">
+                  <blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias atque blanditiis, ea
+                     necessitatibus obcaecati quaerat quod unde ut? Ducimus et eveniet harum libero, quidem repellat!
+                  </blockquote>
+                  <h3>Avinash Kr<span>Co-Founder at XYZ</span></h3>
+               </div>
+            </div>
+            <div class="col-lg-3 col-md-6 text-center">
+               <div class="profile">
+                  <img class="user" src="img/team-1.jpg" alt="">
+                  <blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias atque blanditiis, ea
+                     necessitatibus obcaecati quaerat quod unde ut? Ducimus et eveniet harum libero, quidem repellat!
+                  </blockquote>
+                  <h3>Avinash Kr<span>Co-Founder at XYZ</span></h3>
+               </div>
+            </div>
+            <div class="col-lg-3 col-md-6 text-center">
+               <div class="profile">
+                  <img class="user" src="img/team-1.jpg" alt="">
+                  <blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias atque blanditiis, ea
+                     necessitatibus obcaecati quaerat quod unde ut? Ducimus et eveniet harum libero, quidem repellat!
+                  </blockquote>
+                  <h3>Avinash Kr<span>Co-Founder at XYZ</span></h3>
+               </div>
+            </div>
+            <div class="col-lg-3 col-md-6 text-center">
+               <div class="profile">
+                  <img class="user" src="img/team-1.jpg" alt="">
+                  <blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias atque blanditiis, ea
+                     necessitatibus obcaecati quaerat quod unde ut? Ducimus et eveniet harum libero, quidem repellat!
+                  </blockquote>
+                  <h3>Avinash Kr<span>Co-Founder at XYZ</span></h3>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!----------Get in Touch---------->
+   <section id="contact">
+      <div class="container">
+         <h1>Get In Touch</h1>
+         <div class="row">
+            <div class="col-lg-6 col-md-6">
+               <form action="mail.php" class="contact-form">
+                  <div class="form-group">
+                     <input class="form-control" type="text" placeholder="Your Name">
+                  </div>
+                  <div class="form-group">
+                     <input class="form-control numeric" type="text" placeholder="Phone no.">
+                  </div>
+                  <div class="form-group">
+                     <input class="form-control" type="email" placeholder="Email id">
+                  </div>
+                  <div class="form-group">
+                     <textarea class="form-control" rows="4" placeholder="Message"></textarea>
+                  </div>
+                  <input class="btn btn-primary" type="submit" value="Send Message">
+               </form>
+            </div>
+            <div class="col-lg-6 col-md-6 contact-info">
+               <div class="follow follow--addr">
+                  <b>Address:</b>
+                  XYZ Road, Bangalore, IN
+               </div>
+               <div class="follow follow--phone">
+                  <b>Phone:</b>
+                  <a href="tel:+11234567890">+1 1234567890</a>
+
+               </div>
+               <div class="follow follow--email">
+                  <b>Email:</b>
+                  <a href="mailto:example@mail.com">example@mail.com</a>
+               </div>
+               <div class="follow follow--social">
+                  <b>Social:</b>
+                  <ul>
+                     <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                     <li><a href=""><i class="fab fa-youtube"></i></a></li>
+                     <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                     <li><a href=""><i class="fab fa-google-plus-g"></i></a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!----------Footer---------->
+   <section id="footer">
+      <div class="container text-center">
+         <p class="copyright">Made With <i class="far fa-heart"></i> by <a href="/">AilinDev</a></p>
+      </div>
+   </section>
+</div>
+</body>
+</html>

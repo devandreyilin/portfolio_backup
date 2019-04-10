@@ -1,0 +1,68 @@
+@import "reset";
+@import "vars";
+@import "fonts";
+@import "libs";
+//@import "fontawesome.min";
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-size: 16px;
+  min-width: 320px;
+  position: relative;
+  overflow-x: hidden;
+  font-family: $default-font;
+  color: $text;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  display: block;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.button {
+  background: #1dabff;
+  padding: 20px 30px;
+  display: inline-block;
+  border-bottom: 4px solid #157cb9;
+  border-radius: 4px;
+  transition: all 0.2s ease-in;
+  color: #fafafa;
+  cursor: pointer;
+  &:hover {
+    color: #ffffff;
+    background: #13a4f9;
+    border-bottom: 4px solid #1471a9;
+    box-shadow: 0 2px 4px 1px rgba(0, 0, 0, 0.2);
+  }
+  &:active {
+    background: #1390da;
+  }
+}
+
+.btn {
+  line-height: 1;
+}
+
+
+
+
+
+@import "media"; // Always at the end
