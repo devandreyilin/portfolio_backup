@@ -468,7 +468,7 @@ select {
       background: #9e5406;
       box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
       cursor: pointer;
-      transition: .35s;
+      transition: all .35s ease-in;
 
       figure {
          height: 100%;
@@ -488,17 +488,17 @@ select {
 
          .desc {
             opacity: 1;
-            transform: translateY(0);
+            transform: translate3d(0,0.5px,0);
          }
 
          .test {
-            transform: translateY(0);
+            transform: translate3d(0,0.5px,0);
             opacity: 1;
             user-select: inherit;
          }
 
          .h2-title {
-            transform: translateY(0);
+            transform: translate3d(0,0.5px,0);
          }
       }
 
@@ -506,7 +506,7 @@ select {
          object-fit: cover;
          height: 100%;
          opacity: .65;
-         transition: .35s;
+         transition: opacity .35s ease;
       }
 
       figcaption {
@@ -525,34 +525,42 @@ select {
          transition: .35s;
 
          .h2-title {
+            will-change: transform;
             margin-bottom: -.3em;
             font-size: 1.5em;
             text-transform: uppercase;
             font-weight: 300;
-            transition: .35s;
-            transform: translateY(-15px);
-
+            transition: transform .35s ease;
+            transform: translate3d(0,-14.5px,0);
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
             span {
                font-weight: 700;
             }
          }
 
          .test {
-            transform: translateY(-15px);
-            transition: .35s;
+            will-change: transform;
+            transform: translate3d(0,-14.5px,0);
+            transition: transform .35s ease;
             font-weight: 300;
             font-size: .9em;
             font-family: $extra-font;
             margin-bottom: 0;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
          }
 
          .desc {
+            will-change: transform;
             margin-top: 2em;
             text-transform: uppercase;
             opacity: 0;
-            transform: translateY(15px);
-            transition: .35s;
+            transform: translate3d(0,14.5px,0);
+            transition: transform .35s ease, opacity .35s ease;
             font-size: 1em;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
          }
       }
    }
