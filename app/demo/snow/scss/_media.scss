@@ -1,0 +1,455 @@
+@import "utils/vars";
+
+
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
+@include media-breakpoint-down(lg) {
+
+   /*---------- ADVANTAGES start ----------*/
+   .s-advantages {
+      .advantage {
+         margin-top: 1.1em;
+      }
+   }
+   /*---------- ADVANTAGES end ----------*/
+
+
+   /*---------- PROJECTS start----------*/
+   .s-projects {
+      &-box {
+         height: 190px;
+
+         &--long {
+            height: 410px;
+         }
+      }
+   }
+   /*---------- PROJECTS end ----------*/
+
+
+   /*---------- QUOTES SLIDER start ----------*/
+   .quotes-slider .slick-dots {
+      bottom: -85px;
+   }
+   /*---------- QUOTES SLIDER end ----------*/
+
+
+   /*---------- CLIENTS start ----------*/
+   .clients-logo {
+      width: 185px;
+   }
+   /*---------- CLIENTS end ----------*/
+
+}
+
+// ≥992px
+@include media-breakpoint-down(md) {
+
+   // Titles
+   .h1-title {
+      font-size: 44px;
+   }
+
+   /*---------- PROJECTS start----------*/
+   .s-projects {
+      &-wrap {
+         margin-top: 2.5em;
+      }
+
+      &-box {
+         &.text {
+            order: 0;
+         }
+
+         height: 200px;
+
+         &--long {
+            height: 430px;
+         }
+
+         &__link {
+            img {
+               opacity: 1;
+            }
+         }
+      }
+   }
+   /*---------- PROJECTS end----------*/
+
+
+   /*---------- QUOTES SLIDER start----------*/
+   .quotes-slider .slick-dots {
+      bottom: -70px;
+   }
+   /*---------- QUOTES SLIDER end----------*/
+
+
+   /*---------- CLIENTS start ----------*/
+   .clients-logo {
+      margin-top: 1.5em;
+   }
+   /*---------- CLIENTS end ----------*/
+
+
+   /*---------- LATEST_BLOG start ----------*/
+   .latest_blog-slider {
+      padding-bottom: 15px;
+
+      &__slide {
+         .img-wrap {
+            height: 200px;
+         }
+
+         &-composition {
+            padding: 20px 20px 15px;
+         }
+      }
+   }
+   /*---------- LATEST_BLOG end ----------*/
+
+
+   /*---------- CONTACTS start ----------*/
+   .s-contacts__callback {
+      margin-top: 2em;
+
+      input.btn {
+         width: 100%;
+      }
+   }
+   /*---------- CONTACTS end ----------*/
+
+   /*---------- FOOTER start ----------*/
+   .footer {
+      padding: 4em 0 0;
+      &-column {
+         .col-lg-4:last-child {
+            margin-top: 3em;
+         }
+      }
+      .imgs {
+         a {
+            margin: 0;
+         }
+
+         a:not(:last-child) {
+            margin-right: .3em;
+         }
+      }
+   }
+   /*---------- FOOTER end ----------*/
+
+
+}
+
+// ≥768px
+@include media-breakpoint-down(sm) {
+
+   // Navigation
+   .logo {
+      order: 0;
+   }
+   .hamburger {
+      order: 1;
+   }
+   .navigation {
+      order: 2;
+      width: 100%;
+      justify-content: center;
+      margin: 0 auto;
+   }
+
+
+   // Titles
+   .h1-title {
+      font-size: 35px;
+   }
+   .h2-title {
+      font-size: 34px;
+   }
+
+   /*---------- ABOUT start ----------*/
+   .s-about {
+      padding: 3.5em 0 4em;
+   }
+   /*---------- ABOUT end ----------*/
+
+
+   /*---------- ADVANTAGES start ----------*/
+   .s-advantages {
+      padding: 3em 0 3.5em;
+
+      .advantage {
+         p span {
+            font-size: .7em;
+         }
+      }
+   }
+   /*---------- ADVANTAGES end ----------*/
+
+
+   /*---------- PROJECTS start----------*/
+   .s-projects {
+      padding: 3.5em 0 4em;
+
+      &-wrap {
+         margin-top: 2em;
+      }
+   }
+   /*---------- PROJECTS end----------*/
+
+
+   /*---------- QUOTES SLIDER start----------*/
+   .s-quotes {
+      padding: 6em 0 7em;
+
+      &-wrap {
+         margin-top: 2em;
+      }
+   }
+   .quotes-slider {
+      .slick-slide {
+         .quote {
+            line-height: 30px;
+            font-size: 25px;
+            letter-spacing: 1px;
+
+            &-author {
+            }
+         }
+      }
+
+      .slick-dots {
+         bottom: -45px;
+      }
+   }
+   /*---------- QUOTES SLIDER end----------*/
+
+
+   /*---------- CLIENTS start ----------*/
+   .s-clients {
+      padding: 2em 0 3em;
+   }
+   /*---------- CLIENTS end ----------*/
+
+
+   /*---------- LATEST_BLOG start ----------*/
+   .s-latest_blog {
+      padding: 4em 0;
+   }
+   .latest_blog-slider {
+      &__slide {
+         .img-wrap {
+            height: 260px;
+         }
+
+         &-composition {
+            padding: 25px 25px 18px;
+         }
+      }
+   }
+   /*---------- LATEST_BLOG end ----------*/
+
+
+   /*---------- CONTACTS start ----------*/
+   .s-contacts {
+      padding: 4em 0;
+   }
+   .s-contacts__callback {
+      margin-top: 1em;
+
+      input, textarea {
+         width: 100%;
+         margin: .6em 0;
+      }
+
+      input.btn {
+         width: 100%;
+      }
+   }
+   /*---------- CONTACTS end ----------*/
+
+
+   /*---------- FOOTER start ----------*/
+   .footer {
+      &-column {
+         .col-lg-4 {
+            margin-top: 3em;
+            &:nth-child(2) {
+               margin-top: 4em;
+            }
+            &:first-child {
+               margin-top: 0;
+            }
+         }
+      }
+   }
+   /*---------- FOOTER end ----------*/
+
+
+}
+
+// ≥576px
+@include media-breakpoint-down(xs) {
+
+   // Navigation
+   .navigation {
+      flex-direction: column;
+      margin: 1em 0 2.5em;
+      text-align: right;
+
+      a {
+         font-size: 1em;
+         padding: .8em 2em;
+      }
+   }
+
+   // Titles
+   .h1-title {
+      font-size: 30px;
+      line-height: 1.2;
+      margin: 0.6em 0;
+
+      span {
+         margin-top: 0.4em;
+      }
+   }
+   .h2-title {
+      font-size: 32px;
+   }
+
+   /*---------- ADVANTAGES start ----------*/
+   .s-advantages {
+      .advantage {
+         justify-content: flex-start;
+         margin-top: 1.1em;
+         margin-left: 2.4em;
+      }
+   }
+   /*---------- ADVANTAGES end ----------*/
+
+
+   /*---------- PROJECTS start----------*/
+   .s-projects {
+      &-wrap {
+         margin-top: 1.5em;
+      }
+
+      &-box {
+         height: 170px;
+
+         &--long {
+            height: 370px;
+         }
+      }
+   }
+   /*---------- PROJECTS end----------*/
+
+
+   /*---------- QUOTES start ----------*/
+   .quotes-slider {
+      .slick-slide {
+         .quote {
+            font-size: 22px;
+            letter-spacing: 1.3px;
+
+            &-author {
+               margin-top: 0.4em;
+            }
+         }
+      }
+   }
+   /*---------- QUOTES end ----------*/
+
+
+   /*---------- CLIENTS start ----------*/
+   .clients-logo {
+      width: 140px;
+
+      &-wrap {
+         justify-content: center;
+      }
+   }
+   /*---------- CLIENTS end ----------*/
+
+
+   /*---------- LATEST_BLOG start ----------*/
+   .latest_blog-slider {
+      &__slide {
+         .img-wrap {
+            height: 200px;
+         }
+
+         &-composition {
+            padding: 20px 15px 5px;
+
+            .h3-title {
+               font-size: 18px;
+            }
+         }
+      }
+   }
+   /*---------- LATEST_BLOG end ----------*/
+
+
+   /*---------- FOOTER start ----------*/
+   .footer {
+      &-column {
+         &__about p {
+            margin-bottom: 1.8em;
+         }
+         .col-lg-4 {
+            margin-top: 2em;
+            &:nth-child(2) {
+               margin-top: 3.5em;
+            }
+            &:last-child {
+               margin-top: 1.5em;
+            }
+         }
+      }
+      .h3-title {
+         margin-bottom: 0.5em;
+      }
+
+      .imgs {
+         a {
+            margin: .2em;
+            &:not(:last-child) {
+               margin: .2em;
+            }
+         }
+
+         img {
+            margin: auto;
+            width: 90px;
+            height: 90px;
+         }
+      }
+   }
+   /*---------- FOOTER end ----------*/
+
+}
+
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
+@include media-breakpoint-up(sm) {
+
+}
+
+// ≤768px
+@include media-breakpoint-up(md) {
+
+}
+
+// ≤992px
+@include media-breakpoint-up(lg) {
+
+}
+
+// ≤1200px
+@include media-breakpoint-up(xl) {
+
+}

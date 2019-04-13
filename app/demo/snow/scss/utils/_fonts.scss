@@ -1,0 +1,11 @@
+@import "../_mixins/font-face";
+
+// Playfair Display
+@include font-face("PlayfairDisplay", "../fonts/PlayfairDisplay/PlayfairDisplayBold/PlayfairDisplayBold", 700);
+@include font-face("PlayfairDisplay", "../fonts/PlayfairDisplay/PlayfairDisplayItalic/PlayfairDisplayItalic", 100, italic);
+@include font-face("PlayfairDisplay", "../fonts/PlayfairDisplay/PlayfairDisplayRegular/PlayfairDisplayRegular");
+
+// Work Sans
+@include font-face("WorkSans", "../fonts/WorkSans/WorkSans-Bold", 700);
+@include font-face("WorkSans", "../fonts/WorkSans/WorkSans-Medium", 500);
+@include font-face("WorkSans", "../fonts/WorkSans/WorkSans-Regular");
