@@ -6,9 +6,21 @@
 // ≥1200px
 @include media-breakpoint-down(lg) {
 
+   /*---------- PORTFOLIO start ----------*/
+   .s-portfolio .preview-box {
+      height: 254px;
+      figcaption {
+         .h2-title {
+            font-size: 1.6em;
+         }
+
+      }
+   }
+   /*---------- PORTFOLIO end ----------*/
    // Callback
    .callback .success {
       font-size: 1.2em;
+
       &__message {
          width: 60%;
       }
@@ -16,8 +28,43 @@
 
 }
 
+@media only screen and (max-width:1100px) {
+   .s-portfolio .preview-box {
+      height: 253px;
+      &:hover {
+         figcaption {
+            .h2-title, .test, .desc {
+               transform: translate3d(0, -14.5px, 0);
+               opacity: 1;
+            }
+         }
+      }
+      figcaption {
+         .h2-title, .test, .desc {
+            transform: translate3d(0, -14.5px, 0);
+            opacity: 1;
+         }
+      }
+      img {
+         opacity: .5;
+         filter: blur(1px);
+      }
+   }
+}
+
 // ≥992px
 @include media-breakpoint-down(md) {
+
+   /*---------- PORTFOLIO start ----------*/
+   .s-portfolio .preview-box {
+      height: 191px;
+      figcaption {
+         .h2-title {
+            font-size: 1.2em;
+         }
+      }
+   }
+   /*---------- PORTFOLIO end ----------*/
 
    // Sections
    .s {
@@ -51,6 +98,7 @@
 
    // HEADER
    .header {
+      background-attachment: scroll;
 
       &-composition {
          .h1-title {
@@ -86,10 +134,32 @@
       font-size: 1em;
    }
 
+   /*---------- PORTFOLIO start ----------*/
+   .s-portfolio .preview-box {
+      height: 269px;
+      figcaption {
+         .h2-title {
+            font-size: 1.3em;
+         }
+      }
+   }
+   /*---------- PORTFOLIO end ----------*/
+
 }
 
 // ≥576px
 @include media-breakpoint-down(xs) {
+
+   /*---------- PORTFOLIO start ----------*/
+   .s-portfolio .preview-box {
+      height: 235px;
+      figcaption {
+         .h2-title {
+            font-size: 1.2em;
+         }
+      }
+   }
+   /*---------- PORTFOLIO end ----------*/
 
    .hide-mobile {
       display: none;
@@ -110,8 +180,6 @@
 
    // HEADER
    .header {
-      background-attachment: scroll;
-
       &-composition {
 
          .h1-title {
@@ -124,8 +192,32 @@
       }
    }
 
+   // Portfolio
+   .s-portfolio .preview-box figcaption {
+      .h2-title {
+         font-size: 1.3em;
+         line-height: 1.1;
+         transform: translate3d(0, -3.5px, 0);
+      }
+
+      .test {
+         transform: translate3d(0, 0.5px, 0);
+      }
+
+   }
+
 }
 
+@media only screen and (max-width:400px) {
+   /*---------- PORTFOLIO start ----------*/
+   .s-portfolio .preview-box {
+      height: 165px;
+      figcaption .h2-title {
+         margin-top: 1.3em;
+      }
+   }
+   /*---------- PORTFOLIO end ----------*/
+}
 
 
 /*==========  Mobile First  ==========*/

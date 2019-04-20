@@ -1,0 +1,463 @@
+@import "utils/vars";
+
+
+/*==========  Desktop First  ==========*/
+
+// ≥1400px
+@media only screen and (max-width: 1400px) {
+
+   /*---------- HEADER (start) ----------*/
+   .header {
+
+   }
+   /*---------- HEADER (end) ----------*/
+
+
+   /*---------- POWER (start) ----------*/
+   .s-power {
+      padding: 15em 0 7em;
+   }
+   /*---------- POWER (end) ----------*/
+
+}
+
+// ≥1200px
+@include media-breakpoint-down(lg) {
+
+   /*---------- HEADER (start) ----------*/
+   .header {
+      background-attachment: scroll;
+   }
+   /*---------- HEADER (end) ----------*/
+
+
+   /*---------- START (start) ----------*/
+   .s-start {
+      &-post {
+         padding: 0 38px;
+      }
+   }
+   /*---------- START (end) ----------*/
+
+
+   /*---------- POWER (start) ----------*/
+   .s-power {
+      padding: 12em 0 7em;
+      background-attachment: scroll;
+   }
+   /*---------- POWER (end) ----------*/
+
+
+   /*---------- ORDER (start) ----------*/
+   .s-order {
+      padding: 6.5em 0 7em;
+
+      &__box {
+         padding: 1.8em 2.85em;
+
+         &:hover {
+            box-shadow: none;
+
+            .s-order__option {
+               background-color: #e1e1e1;
+            }
+         }
+
+         &:last-child {
+            box-shadow: 0 0 40px 20px rgba(0, 0, 0, .05);
+            z-index: 3;
+
+            &:hover {
+               box-shadow: 0 0 40px 20px rgba(0, 0, 0, .05);
+            }
+
+            .s-order__option {
+               background-color: #bd8cbf;
+            }
+         }
+      }
+   }
+   /*---------- ORDER (end) ----------*/
+
+}
+
+@media screen and (max-width: 1100px) {
+
+   /*---------- HEADER (start) ----------*/
+   .header {
+      background-attachment: scroll;
+      &__phone {
+         width: 400px;
+         bottom: -15%;
+      }
+   }
+   /*---------- HEADER (end) ----------*/
+
+
+   /*---------- START (start) ----------*/
+   .s-start {
+      &-posts {
+         margin-top: 4em;
+      }
+   }
+   /*---------- START (end) ----------*/
+
+
+   /*---------- PAGE COLUMNS (start) ----------*/
+   .page-columns {
+      padding: 4.5em 0 6.5em;
+   }
+   /*---------- PAGE COLUMNS (end) ----------*/
+
+
+   /*---------- ORDER (start) ----------*/
+   .s-order {
+
+   }
+   /*---------- ORDER (end) ----------*/
+
+
+   /*---------- FOOTER (start) ----------*/
+   .footer {
+      padding: 6em 0 8em;
+   }
+   /*---------- FOOTER (end) ----------*/
+
+}
+
+
+// ≥992px
+@include media-breakpoint-down(md) {
+
+   /*---------- HEADER (start) ----------*/
+   .header {
+      background-attachment: scroll;
+      &__phone {
+         display: none;
+      }
+   }
+   /*---------- HEADER (end) ----------*/
+
+
+   /*---------- START (start) ----------*/
+   .s-start {
+      &-posts {
+         margin-top: 3em;
+      }
+
+      &-post {
+         height: 243.38px;
+
+         &:nth-child(1) {
+            order: 0;
+         }
+
+         &:nth-child(2) {
+            order: 1;
+         }
+
+         &:nth-child(3) {
+            order: 2;
+         }
+
+         &:nth-child(4) {
+            order: 4;
+         }
+
+         &:nth-child(5) {
+            order: 3;
+         }
+      }
+
+      .page-columns {
+         padding: 4.5em 0 4em;
+      }
+   }
+   /*---------- START (end) ----------*/
+
+
+   /*---------- PAGE COLUMNS (start) ----------*/
+   .page-columns {
+      padding: 4.5em 0 3em;
+
+      .h2-title {
+         margin-bottom: 1.2em;
+      }
+
+      &__content {
+         margin-bottom: 2.5em;
+      }
+   }
+   /*---------- PAGE COLUMNS (end) ----------*/
+
+
+   /*---------- POWER (start) ----------*/
+   .s-power {
+      padding: 10em 0 6em;
+
+      .h1-title {
+         font-size: 3.5em;
+         line-height: 1.2;
+      }
+   }
+   /*---------- POWER (end) ----------*/
+
+
+   /*---------- ORDER (start) ----------*/
+   .s-order {
+
+   }
+   /*---------- ORDER (end) ----------*/
+
+
+   /*---------- FOOTER (start) ----------*/
+   .footer {
+      padding: 4.5em 0 5em;
+
+      &-touch {
+         &__desc {
+            padding-right: 2em;
+         }
+      }
+   }
+   /*---------- FOOTER (end) ----------*/
+
+}
+
+// ≥768px
+@include media-breakpoint-down(sm) {
+
+   /*---------- HEADER (start) ----------*/
+   .header {
+      background-attachment: scroll;
+   }
+   /*---------- HEADER (end) ----------*/
+
+
+   /*---------- START (start) ----------*/
+   .s-start {
+      &-post {
+         height: 221.38px;
+      }
+
+      .page-columns {
+         padding: 4em 0 1em;
+      }
+   }
+   /*---------- START (end) ----------*/
+
+
+   /*---------- PAGE COLUMNS (start) ----------*/
+   .page-columns {
+      padding: 4em 0 2.5em;
+
+      .h2-title {
+         margin-bottom: .9em;
+      }
+
+      &__content {
+         margin-bottom: 2.5em;
+      }
+   }
+   /*---------- PAGE COLUMNS (end) ----------*/
+
+
+   /*---------- POWER (start) ----------*/
+   .s-power {
+      padding: 9em 0 6em;
+
+      .h1-title {
+         font-size: 3.5em;
+         line-height: 1.2;
+      }
+   }
+   /*---------- POWER (end) ----------*/
+
+
+   /*---------- ORDER (start) ----------*/
+   .s-order {
+      padding: 2.5em 0 5em;
+
+      &__box {
+         &:first-child {
+            margin-bottom: 3em;
+         }
+      }
+   }
+   /*---------- ORDER (end) ----------*/
+
+
+   /*---------- FOOTER (start) ----------*/
+   .footer {
+      &__callback {
+         margin-top: 2em;
+      }
+
+      &-touch {
+         &__desc {
+            padding-right: 0;
+         }
+      }
+   }
+   /*---------- FOOTER (end) ----------*/
+
+}
+
+// ≥576px
+@include media-breakpoint-down(xs) {
+
+   /*---------- HEADER (start) ----------*/
+   .header {
+      background-attachment: scroll;
+
+      .h1-title {
+         font-size: 3.6em;
+      }
+
+      &__composition {
+         p {
+            font-size: 1em;
+         }
+      }
+   }
+   /*---------- HEADER (end) ----------*/
+
+
+   /*---------- POWER (start) ----------*/
+   .s-power {
+      .h1-title {
+         font-size: 3.2em;
+      }
+   }
+   /*---------- POWER (end) ----------*/
+
+
+   /*---------- FOOTER (start) ----------*/
+   .footer {
+      padding: 3.5em 0;
+
+      &-touch {
+         &__desc {
+            margin-top: .7em;
+         }
+      }
+   }
+   /*---------- FOOTER (end) ----------*/
+
+}
+
+// ≥400px
+@media only screen and (max-width: 400px) {
+
+   /*---------- HEADER (start) ----------*/
+   .header {
+      background-attachment: scroll;
+
+      .h1-title {
+         font-size: 3.1em;
+      }
+   }
+   /*---------- HEADER (end) ----------*/
+
+
+   /*---------- START (start) ----------*/
+   .s-start {
+      padding-bottom: 2em;
+
+      &-post {
+         padding: 0 22px;
+         height: 260.38px;
+      }
+
+      .page-columns {
+         padding: 3em 0 0;
+      }
+   }
+   /*---------- START (end) ----------*/
+
+
+   /*---------- PAGE COLUMNS (start) ----------*/
+   .page-columns {
+      padding: 3.5em 0 2em;
+
+      .h2-title {
+         margin-bottom: .9em;
+         font-size: 2.3em;
+      }
+
+      .h4-title {
+         margin-bottom: 1em;
+      }
+
+      &__content {
+         margin-bottom: 2em;
+      }
+   }
+   /*---------- PAGE COLUMNS (end) ----------*/
+
+
+   /*---------- POWER (start) ----------*/
+   .s-power {
+      padding: 5em 0 4em;
+      background-position: left;
+
+      .h1-title {
+         font-size: 2.4em;
+      }
+   }
+   /*---------- POWER (end) ----------*/
+
+
+   /*---------- ORDER (start) ----------*/
+   .s-order {
+      padding: 2em 0 4.5em;
+
+      &__box {
+         &:first-child {
+            margin-bottom: 2.7em;
+         }
+
+         &:last-child {
+            box-shadow: 0 0 25px 20px rgba(0, 0, 0, .05);
+
+            &:hover {
+               box-shadow: 0 0 25px 20px rgba(0, 0, 0, .05);
+            }
+         }
+      }
+   }
+   /*---------- ORDER (end) ----------*/
+
+
+   /*---------- FOOTER (start) ----------*/
+   .footer {
+      &__column {
+         margin-top: 2em;
+      }
+   }
+   /*---------- FOOTER (end) ----------*/
+
+}
+
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
+@include media-breakpoint-up(sm) {
+
+}
+
+// ≤768px
+@include media-breakpoint-up(md) {
+
+}
+
+// ≤992px
+@include media-breakpoint-up(lg) {
+
+}
+
+// ≤1200px
+@include media-breakpoint-up(xl) {
+
+}
