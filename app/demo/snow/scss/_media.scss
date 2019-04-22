@@ -145,7 +145,13 @@
 // ≥768px
 @include media-breakpoint-down(sm) {
 
-   // Navigation
+   /*---------- HEADER start ----------*/
+   .header {
+      background-attachment: scroll;
+   }
+   /*---------- HEADER end ----------*/
+
+   /*---------- NAVIGATION start ----------*/
    .logo {
       order: 0;
    }
@@ -158,6 +164,7 @@
       justify-content: center;
       margin: 0 auto;
    }
+   /*---------- NAVIGATION end ----------*/
 
 
    // Titles

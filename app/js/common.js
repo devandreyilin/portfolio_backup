@@ -1,11 +1,11 @@
 $(function () {
 
-   //============= SVG INJECTER start ==================
+   //============= SVG INJECTER (start) ==================
    SVGInject($('.svg-img'));
-   //============= SVG INJECTER end ==================
+   //============= SVG INJECTER (end) ==================
 
 
-   //============= RESPONSIVE MENU start ==================
+   //============= RESPONSIVE MENU (start) ==================
    var menuBtn = $('.hamburger'),
        menuList = $('.navigation__list');
 
@@ -20,10 +20,10 @@ $(function () {
          menuList.addClass('hide-tablet hide-mobile').removeClass('show-desktop');
       }
    });
-   //============= RESPONSIVE MENU end ==================
+   //============= RESPONSIVE MENU (end) ==================
 
 
-   //============= SCROLL TO SECTION start ==================
+   //============= SCROLL TO SECTION (start) ==================
    $(window).on('resize', function () {
       if ($(window).width() > 768) {
          menuList.show().css('display', 'flex');
@@ -63,10 +63,10 @@ $(function () {
 
       e.preventDefault();
    });
-   //============= SCROLL TO SECTION end ==================
+   //============= SCROLL TO SECTION (end) ==================
 
 
-   //============= BACKLIGHT MENU ITEM start ==================
+   //============= BACKLIGHT MENU ITEM (start) ==================
    // Cache selectors
    var lastId,
        topMenu = $("#top-menu"),
@@ -103,15 +103,15 @@ $(function () {
              .end().filter("[href='#" + id + "']").parent().addClass("active");
       }
    });
-   //============= BACKLIGHT MENU ITEM end ==================
+   //============= BACKLIGHT MENU ITEM (end) ==================
 
 
-   //============= SELECTIZE start ==================
+   //============= SELECTIZE (start) ==================
    $('.select').selectize();
-   //============= SELECTIZE end ==================
+   //============= SELECTIZE (end) ==================
 
 
-   //============= BUTTON TO TOP start ==================
+   //============= BUTTON TO TOP (start) ==================
    function btnUp() {
 
       var btnScroll = $('.top');
@@ -137,10 +137,10 @@ $(function () {
    }
 
    btnUp();
-   //============= BUTTON TO TOP end ==================
+   //============= BUTTON TO TOP (end) ==================
 
 
-   //============= CALLBACK FORM start ==================
+   //============= CALLBACK FORM (start) ==================
    //E-mail Ajax Send
    $("form.callback").submit(function () { //Change
       var th = $(this);
@@ -174,6 +174,6 @@ $(function () {
       $('.callback .success').stop().fadeOut(200);
       $('.callback .success span').stop().fadeOut(200);
    });
-   //============= CALLBACK FORM end ==================
+   //============= CALLBACK FORM (end) ==================
 
 });
