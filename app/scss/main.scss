@@ -366,6 +366,7 @@ select {
       height: 100%;
       display: flex;
       fill: $dark;
+      transition: .25s;
    }
 
    &:hover {
